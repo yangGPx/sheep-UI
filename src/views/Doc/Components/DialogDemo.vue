@@ -1,5 +1,5 @@
 <template>
-  <mark-body>
+  <mark-body path="tabs" title="Tabs 标签页">
     <h2>Dialog 弹窗</h2>
     <CodeWrapper :html="dialogCode" title="基本用法">
       <SButton @click="toggle1">打开弹窗</SButton>

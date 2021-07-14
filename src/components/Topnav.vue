@@ -10,7 +10,7 @@
             <li>
                 <router-link to="/doc">文档</router-link>
             </li>
-            <li>地址</li>
+            <li><a target="_blank" href="https://github.com/yangGPx/sheep-UI">Github</a></li>
         </ul>
     </nav>
 </template>

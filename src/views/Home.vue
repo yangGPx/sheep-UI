@@ -6,7 +6,7 @@
             <h3>一款基于Vue3+Typescript的UI库</h3>
             <div>
                 <router-link class="home-link" to="/doc">文档</router-link>
-                <a class="home-link" href="a">GitHub</a>
+                <a class="home-link" target="_blank" href="https://github.com/yangGPx/sheep-UI">GitHub</a>
             </div>
         </main>
     </div>

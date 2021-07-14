@@ -3,6 +3,7 @@
         <article v-if="fileName" class="markdown-body" v-html="md"></article>
         <article v-else class="markdown-body">
             <slot />
+            <p v-if="path">下一节: <a :href="`#/doc/${path}`">{{title}}</a></p>
         </article>
     </div>
 </template>
@@ -18,6 +19,8 @@ export default {
         fileName: {
             type: String,
         },
+        path: String,
+        title: String,
     },
     setup (props) {
         let md = ref('')

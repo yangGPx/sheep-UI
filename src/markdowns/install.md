@@ -12,5 +12,5 @@ npm install sheep-ui-1
 
 
 
-下一节: [快速开始](#/doc/quickquickStart)
+下一节: [快速开始](#/doc/quickStart)
 

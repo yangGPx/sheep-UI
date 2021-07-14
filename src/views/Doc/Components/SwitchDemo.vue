@@ -1,5 +1,5 @@
 <template>
-  <mark-body>
+  <mark-body path="button" title="Button组件">
     <h2>Switch 开关</h2>
     <CodeWrapper :html="switchCode()" title="基本用法">
       <Switch v-model="switchValue1"/>

@@ -1,5 +1,5 @@
 <template>
-<mark-body>
+<mark-body path="dialog" title="Dilog 弹窗">
   <h2>Button 按钮</h2>
   <CodeWrapper :html="buttonCode()" title="基本用法">
     <s-button>按钮</s-button>
