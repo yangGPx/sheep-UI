@@ -5,7 +5,7 @@ const switchCode = (disabled: false) => `
 
 <script lang="ts">
     import { ref } from 'vue'
-    import Switch from '../../../libs/Switch.vue'
+    import { Switch } from 'sheep-ui-1'
 
     export default {
         setup () {
@@ -26,11 +26,11 @@ const buttonCode = (disabled: false) => `
 </template>
 
 <script lang="ts">
-    import SButton from '../../../libs/Button.vue'
+    import { Button } from 'sheep-ui-1'
 
     export default {
         components: {
-            SButton
+            Button
         }
     }
 </script>`
@@ -43,11 +43,11 @@ const buttonTextCode = () => `
 </template>
 
 <script lang="ts">
-    import SButton from '../../../libs/Button.vue'
+    import { Button } from 'sheep-ui-1'
 
     export default {
         components: {
-            SButton
+            Button
         }
     }
 </script>`
@@ -60,18 +60,18 @@ const buttonSizeCode = () => `
 </template>
 
 <script lang="ts">
-    import SButton from '../../../libs/Button.vue'
+    import {Button} from 'sheep-ui-1'
 
     export default {
         components: {
-            SButton
+            Button
         }
     }
 </script>`
 
 const dialogCode = `
 <template>
-    <SButton @click="toggle">打开弹窗</SButton>
+    <Button @click="toggle">打开弹窗</Button>
     <Dialog v-model:visiable="visiable"
         titleText="自定义标题"
         :ok="ok"
@@ -81,8 +81,7 @@ const dialogCode = `
 </template>
 
 <script lang="ts">
-    import SButton from '../../../libs/Button.vue'
-    import Dialog from '../../../libs/Dialog.vue'
+    import {Button,Dialog} from 'sheep-ui-1'
     import { ref } from 'vue'
 
     export default {
@@ -91,14 +90,14 @@ const dialogCode = `
             return {visiable}
         },
         components: {
-            SButton, Dialog
+            Button, Dialog
         }
     }
 </script>`
 
 const dialogMonLayerCode = `
 <template>
-    <SButton @click="toggle">打开弹窗</SButton>
+    <Button @click="toggle">打开弹窗</Button>
     <Dialog v-model:visiable="visiable"
         titleText="自定义标题"
         :clickMonlayerHide="false">
@@ -107,8 +106,7 @@ const dialogMonLayerCode = `
 </template>
 
 <script lang="ts">
-    import SButton from '../../../libs/Button.vue'
-    import Dialog from '../../../libs/Dialog.vue'
+    import {Button, Dialog} from 'sheep-ui-1'
     import { ref } from 'vue'
 
     export default {
@@ -117,19 +115,18 @@ const dialogMonLayerCode = `
             return {visiable, ok,cancel}
         },
         components: {
-            SButton, Dialog,
+            Button, Dialog,
         }
     }
 </script>`
 
 const dialogFunctionCode =`
 <template>
-    <SButton @click="toggleDialog">打开弹窗</SButton>
+    <Button @click="toggleDialog">打开弹窗</Button>
 </template>
 
 <script lang="ts">
-    import SButton from '../../../libs/Button.vue'
-    import openDialog from '../../../libs/openDialog'
+    import {Button, openDialog} from 'sheep-ui-1'
 
     export default {
         setUp() {
@@ -146,7 +143,7 @@ const dialogFunctionCode =`
             return { toggleDialog }
         },
         components: {
-            SButton
+            Button
         }
     }
 </script>`
@@ -160,8 +157,7 @@ const tabCode = `
 </template>
 
 <script lang="ts">
-    import Tabs from '../../../libs/Tabs.vue'
-    import Tab from '../../../libs/Tab.vue'
+import {Tab, Tabs} from 'sheep-ui-1'
     import { ref } from 'vue'
 
     export default {

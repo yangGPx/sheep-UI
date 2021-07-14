@@ -24,7 +24,7 @@ export default {
         switch(props.fileName) {
             case 'intro': md.value = Intro;break;
             case 'install': md.value = Install;break;
-            case 'quickStart': md.value = QuickStart;break;
+            case 'quickstart': md.value = QuickStart;break;
         }
         return {md}
     }

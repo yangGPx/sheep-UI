@@ -1,21 +1,58 @@
 # 快速开始
 
-### 欢迎使用 **SheepUI** 
+注意：如果没有安装，请先[安装](#/doc/install)组件库
 
-**SheepUI**是一个基于`Vue3` + `TypeScript`的开源UI组件库,使用`vite2`进行搭建。
+### 引入
 
-若本组件库的原生样式不能满足您的需要，可直接进行样式覆盖。
+```js
+import { Switch, Button, Tabs, Tab, openDialog, Dialog } from 'sheep-ui-1'
+import 'sheep-ui-1/dist/lib/sheep.css'
+```
 
-本组件库支持**PC端**和**移动端**。
+### 使用
+
+```vue
+<template>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <Switch v-model="switch1"/>
+  <Button @click="toggle">按钮</Button>
+  <Tabs v-model="TabValue">
+    <Tab key="tab1" title="标题一">content1</Tab>
+    <Tab key="tab2" title="标题二">content2</Tab>
+  </Tabs>
+
+</template>
+
+<script>
+import 'sheep-ui-1/dist/lib/sheep.css'
+import { Switch, Button, Tabs, Tab, openDialog, Dialog } from 'sheep-ui-1'
+
+export default {
+  data() {
+    return {
+      switch1: false,
+      TabValue: 'tab1'
+    }
+  },
+  methods: {
+    toggle() {
+      openDialog({
+        title: '自定义标题',
+        content: '1233123',
+        
+      })
+    }
+  },
+  components: {
+    Switch,
+    Button, Tabs, Tab, openDialog, Dialog
+  },
+}
+</script>
+
+```
 
 
 
-
-> 版本：
->
-> ​		更新内容：首次发布
-
-
-
-下一节: [安装](#/doc/install)
+下一节: [Switch 开关](#/doc/switch)
 

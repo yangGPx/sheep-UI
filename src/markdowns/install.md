@@ -1,20 +1,16 @@
 # 安装
 
-### 欢迎使用 **SheepUI** 
+**前提：需要下载node以及npm。**
 
-**SheepUI**是一个基于`Vue3` + `TypeScript`的开源UI组件库,使用`vite2`进行搭建。
+打开终端运行以下命令安装
 
-若本组件库的原生样式不能满足您的需要，可直接进行样式覆盖。
-
-本组件库支持**PC端**和**移动端**。
-
-
-
-> 版本：
->
-> ​		更新内容：首次发布
+```bash
+npm install sheep-ui-1
+```
 
 
 
-下一节: [安装](#/doc/install)
+
+
+下一节: [快速开始](#/doc/quickquickStart)
 
